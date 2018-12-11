@@ -22,14 +22,6 @@ The numbering here is (string_id, starting_index).  For example, the third strin
 ['CA', 'AC', 'TA']
 ```
 
-### Longest Palindromic Substring
-```Python
->>> string = 'babad'
->>> tree = SuffixTree([string, string[::-1]])  # string[::-1] reverses the string
->>> tree.lcs()
-['bab', 'aba']
-```
-
 ## Graphing
 ```Python
 >>> graph = tree.create_graph(suffix_link=False)  # Same as tree.create_graph()
